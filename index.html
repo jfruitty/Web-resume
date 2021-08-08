@@ -29,38 +29,38 @@
 
    <style>
       #countdown {
-          border: 2px solid;
-          border-radius: 0px;
-          width: 120px;
-          height: 120px;
-          padding-top: 15px;
-          margin: 15px;
-          border-color: #11ABB0;
-          
+         border: 2px solid;
+         border-radius: 0px;
+         width: 120px;
+         height: 120px;
+         padding-top: 15px;
+         margin: 15px;
+         border-color: #11ABB0;
+
       }
 
       span.num {
-          display: block;
-          text-align: center;
-          color: white;
-          height: 64px;
-          font-family: 'pt sans', sans-serif;
-          font-weight: 300;
-          font-size: 60px;
-          line-height: 64px;
+         display: block;
+         text-align: center;
+         color: white;
+         height: 64px;
+         font-family: 'pt sans', sans-serif;
+         font-weight: 300;
+         font-size: 60px;
+         line-height: 64px;
       }
 
-      .countdown-span{
-          display: block;
-          text-align: center;
-          height: 20px;
-          font-family: 'pt sans', sans-serif;
-          font-weight: 300;
-          font-size: 18px;
-          line-height: 20px;
-          color: #11ABB0;
+      .countdown-span {
+         display: block;
+         text-align: center;
+         height: 20px;
+         font-family: 'pt sans', sans-serif;
+         font-weight: 300;
+         font-size: 18px;
+         line-height: 20px;
+         color: #11ABB0;
       }
-  </style>
+   </style>
 
    <!-- Script
    ================================================== -->
@@ -632,7 +632,7 @@
                      <div class="days" id="countdown">
                         <span class="num" id="days">01</span>
                         <span class="countdown-span">days</span>
-                     </div>   
+                     </div>
                   </div>
                </div> <!-- item end -->
 
@@ -641,7 +641,7 @@
                      <div class="days" id="countdown">
                         <span class="num" id="hours">01</span>
                         <span class="countdown-span">hours</span>
-                     </div>   
+                     </div>
                   </div>
                </div> <!-- item end -->
 
@@ -650,7 +650,7 @@
                      <div class="days" id="countdown">
                         <span class="num" id="minutes">01</span>
                         <span class="countdown-span">minutes</span>
-                     </div>   
+                     </div>
                   </div>
                </div> <!-- item end -->
 
@@ -659,7 +659,7 @@
                      <div class="days" id="countdown">
                         <span class="num" id="seconds">01</span>
                         <span class="countdown-span">seconds</span>
-                     </div>   
+                     </div>
                   </div>
                </div> <!-- item end -->
 
@@ -909,7 +909,7 @@
 
          <div class="eight columns">
 
-            
+
 
             <!-- form -->
             <form action="" method="post" id="contactForm" name="contactForm">
@@ -1036,19 +1036,23 @@
 
    </footer> <!-- Footer End-->
 
-   
 
-<script>
-function myMap() {
-var mapProp= {
-  center:new google.maps.LatLng(51.508742,-0.120850),
-  zoom:5,
-};
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-}
-</script>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHadXXeOOpChyq8AyS023KomqIUhOwxno&callback=myMap"></script>
+   <script>
+      function myMap() {
+         var marker = new google.maps.Marker({ position: myCenter });
+
+         marker.setMap(map);
+         var mapProp = {
+            center: new google.maps.LatLng(13.9204314, 100.6234554),
+            zoom: 20,
+         };
+         var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+      }
+   </script>
+
+   <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHadXXeOOpChyq8AyS023KomqIUhOwxno&callback=myMap"></script>
 
    <!-- Java Script
    ================================================== -->
