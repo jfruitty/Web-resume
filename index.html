@@ -760,8 +760,8 @@ Ensure the safety of all passengers, aircraft and crew.
 
 
 
-            <!-- form -->
-            <form action="" method="post" id="contactForm" name="contactForm">
+            <!-- form  <form action="" method="post" id="contactForm" name="contactForm"> -->
+            <form   name="contactForm">
                <fieldset>
 
                   <div>
@@ -798,7 +798,7 @@ Ensure the safety of all passengers, aircraft and crew.
             <div id="message-warning"> Error boy</div>
             <!-- contact-success -->
             <div id="message-success">
-               <i class="fa fa-check"></i>Your message was sent, thank you!<br>
+               <i class="fa fa-check"></i>I will reach to you soon thank you!<br>
             </div>
 
          </div>
@@ -960,6 +960,22 @@ Ensure the safety of all passengers, aircraft and crew.
       progress.style.height = progressHeight + "%";
    }
    </script>
+
+<script>
+   const scriptURL = 'https://script.google.com/macros/s/AKfycbwog2B6cnQW17drPONfVbVwOtWJ-KEu2ZX2jLq3Vp5Gnifk4oFNvs83bXut_3G601I1TA/exec'
+   const form = document.forms['contactForm']
+ 
+   form.addEventListener('submit', e => {
+     e.preventDefault()
+     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+       //.then(response => console.log('Success!', response))
+       //.catch(error => console.error('Error!', error.message))
+      document.getElementById("contactMessage").value = "";
+      document.getElementById("message-success").style.display = "block";
+   })
+ </script>
+
+
 
 </body>
 
