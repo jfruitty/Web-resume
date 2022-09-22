@@ -1,0 +1,66 @@
+
+
+body {
+    margin: 0;
+}
+
+
+.site-header
+{
+    background: #0f0f0f; 
+    padding-top: 2em;
+    padding-bottom: 1.8em;
+    border-bottom-color: #000000;
+}
+
+.col-full{
+    display: flex;
+}
+
+.site-branding{
+    margin-left: 3%;
+    width: 18%;
+}
+
+.site-branding img{
+    height: auto;
+    max-width: 80%;
+    max-height: none;
+}
+
+.storefront-primary-navigation{
+  
+    float: right !important;
+    width: 74%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 1rem;
+}
+
+
+.primary-navigation{
+    display: block;
+}
+
+.nav-menu
+{
+    
+    float: right;
+}
+
+.menu-item{
+
+    display: inline-block;
+    margin-left: 2rem;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif !important;
+    font-weight: 300;
+
+}
+
+.menu-item a{
+    color: white;
+    text-decoration: none;
+}
