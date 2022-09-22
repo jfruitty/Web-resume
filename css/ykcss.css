@@ -67,7 +67,7 @@ body {
 
 .content{
     display: flex;
-    min-height: 100vh;
+   
 }
 
 .content-menu{
@@ -91,8 +91,7 @@ body {
 
 
 .content-img{
- 
-    min-width: 75%;
+    padding-right: 10%;
     min-height: 100%;
 }
 
@@ -116,6 +115,7 @@ body {
 }
 
 .component-logo img{
+    
     width: 100%;
 }
 
@@ -123,6 +123,7 @@ body {
     display: flex;
 }
 .component-menu-item{
+    cursor: pointer;
     margin-right: 0.25rem;
     background: #000000;
     width: 25px;
@@ -134,4 +135,22 @@ body {
 
 .component-menu-item img{
     width: 100%;
+}
+
+.preview {
+    position: relative;
+}
+
+.preview img:first-child {
+    position: relative;
+}
+
+.preview img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    max-width: 100%;
+    background: none !important;
 }

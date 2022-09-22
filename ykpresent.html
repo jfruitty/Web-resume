@@ -10,6 +10,8 @@
     ================================================== -->
     <link rel="stylesheet" href="css/ykcss.css">
 
+    <script src="js/ykpresent.js"></script>
+
     <title>Yk Present</title>
 </head>
 <body>
@@ -47,13 +49,13 @@
                         </div>
                     </div>
                     
-                    <div class="component-logo"><img src="./images/kawasaki-logo.png" alt=""></div>
+                    <div class="component-logo"><img src="./images/kawasaki-logo.png" alt="" id="motor-logo"></div>
                 </div>
                 <div class="component-menu">
-                    <div class="component-menu-item"><img src="./images/kawasaki-logo.png" alt=""></div>
-                    <div class="component-menu-item"><img src="./images/suzuki-logo.png" alt=""></div>
-                    <div class="component-menu-item"><img src="./images/yamaha-logo.png" alt=""></div>
-                    <div class="component-menu-item"><img src="./images/honda-logo.png" alt=""></div>
+                    <div class="component-menu-item"><img src="./images/kawasaki-logo.png" alt="" onclick="kawasaki()"></div>
+                    <div class="component-menu-item"><img src="./images/suzuki-logo.png" alt="" onclick="suzuki()"></div>
+                    <div class="component-menu-item"><img src="./images/yamaha-logo.png" alt="" onclick="yamaha()"></div>
+                    <div class="component-menu-item"><img src="./images/honda-logo.png" alt="" onclick="honda()"></div>
                 </div>
             </div>
             <div class="content-menu-item">
@@ -66,12 +68,12 @@
                         </div>
                     </div>
                     
-                    <div class="component-logo"><img src="./images/excel_silver.png" alt=""></div>
+                    <div class="component-logo"><img src="./images/excel_silver.png" alt="" id="rim-logo"></div>
                 </div>
                 <div class="component-menu">
-                    <div class="component-menu-item"><img src="./images/excel_silver.png" alt=""></div>
-                    <div class="component-menu-item"><img src="./images/excel_black.png" alt=""></div>
-                    <div class="component-menu-item"><img src="./images/excel-blue.png" alt=""></div>
+                    <div class="component-menu-item"><img src="./images/excel_silver.png" alt="" onclick="rimsilver()"></div>
+                    <div class="component-menu-item"><img src="./images/excel_black.png" alt="" onclick="rimblack()"></div>
+                    <div class="component-menu-item"><img src="./images/excel-blue.png" alt="" onclick="rimblue()"></div>
                     
                 </div>
             </div>
@@ -85,17 +87,22 @@
                         </div>
                     </div>
                     
-                    <div class="component-logo"><img src="./images/kawasaki-logo.png" alt=""></div>
+                    <div class="component-logo"><img src="./images/silver.png" alt="" id="hub-logo"></div>
                 </div>
                 <div class="component-menu">
-                    <div class="component-menu-item"><img src="./images/kawasaki-logo.png" alt=""></div>
-                    <div class="component-menu-item"><img src="./images/suzuki-logo.png" alt=""></div>
-                    <div class="component-menu-item"><img src="./images/yamaha-logo.png" alt=""></div>
-                    
+                    <div class="component-menu-item"><img src="./images/silver.png" alt="" onclick="hubsilver()"></div>
+                    <div class="component-menu-item"><img src="./images/black.png" alt="" onclick="hubblack()"></div>
+                    <div class="component-menu-item"><img src="./images/blue.png" alt="" onclick="hubblue()"></div>
                 </div>
             </div>
         </div>
-        <div class="content-img">b</div>
+        <div class="content-img">
+            <div class="preview">
+                <img src="./images/kawasaki_custom.png" id="motorcycle"></img>
+                <img src="./images/rim-silver-excel.png" id="rim"></img>
+                <img src="./images/silver-hub.png" id="hub"></img>
+            </div>
+        </div>
     </div>
     <footer>
 
