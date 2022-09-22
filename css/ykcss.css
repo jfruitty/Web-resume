@@ -64,3 +64,74 @@ body {
     color: white;
     text-decoration: none;
 }
+
+.content{
+    display: flex;
+    min-height: 100vh;
+}
+
+.content-menu{
+    
+    min-width: 25%;
+    min-height: 100%;
+    padding: 4.5rem;
+}
+
+.content-menu-item{
+    
+    padding-bottom: 3rem;
+}
+
+.component-header{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1.2rem;
+}
+
+
+.content-img{
+ 
+    min-width: 75%;
+    min-height: 100%;
+}
+
+.component-img{
+    display: flex;
+}
+
+.component-img img{
+    width: 60px;
+}
+
+.component-mid{
+    margin-left: 1rem;
+}
+
+.component-logo {
+    width: 25px;
+    height: 25px;
+    min-width: 25px;
+    min-height: 25px;
+}
+
+.component-logo img{
+    width: 100%;
+}
+
+.component-menu{
+    display: flex;
+}
+.component-menu-item{
+    margin-right: 0.25rem;
+    background: #000000;
+    width: 25px;
+    height: 25px;
+    min-width: 25px;
+    min-height: 25px;
+    color: white;
+}
+
+.component-menu-item img{
+    width: 100%;
+}
