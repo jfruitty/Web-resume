@@ -87,7 +87,7 @@ pre {
    word-wrap: break-word;
 }
 
-blockquote, q { quotes: &#8220 &#8220; }
+blockquote, q { quotes: #8220 #8220; }
 
 blockquote:before, blockquote:after,
 q:before, q:after {
@@ -714,6 +714,8 @@ properly.
    .first { clear: none; }
    .s-first { clear: left; }
 
+    
+
 }
 
 /* mobile wide/smaller tablets
@@ -895,7 +897,7 @@ properly.
    letter-spacing: 5px !important;
    animation: typing 4s steps(13) infinite;
    overflow: hidden;
-   font-size: 4em !important;
+   font-size: 3em !important;
    max-height: 100px !important;
    
 }
@@ -906,7 +908,7 @@ properly.
    }
    30%,60%
    {
-      width: 370px;
+      width: 350px;
    }
 }
 
